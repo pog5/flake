@@ -13,7 +13,7 @@
     grimblast
     hyprpaper
     xsettingsd
-    dunst
+    # dunst
     libnotify
     wl-clipboard
     slurp
