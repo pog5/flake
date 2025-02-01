@@ -38,11 +38,11 @@
   };
 
   services.xserver.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.displayManager.ssdm.enable = true;
+  services.xserver.desktopManager.plasma6.enable = true;
 
   environment.systemPackages = with pkgs; [ age ];
 
-  services.xserver.displayManager.gdm.enable = true;
 
   system.stateVersion = "24.11";
 }

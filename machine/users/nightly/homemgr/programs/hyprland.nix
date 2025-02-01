@@ -1,4 +1,5 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, ... }:
+{
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = true;
@@ -8,11 +9,13 @@
       "$mod" = "SUPER";
 
       monitor = [
-        "DP-2, 1920x1080@75, 0x0, 1" 
-        "HDMI-A-1, 1920x1080@60, 1920x0, 1" 
+        "DP-2, 2560x1440@179.998001, 1920x0, 1"
+        "DP-1, 1920x1080@74.973000, 0x0, 1"
       ];
 
-      input = { "accel_profile" = "flat"; };
+      input = {
+        "accel_profile" = "flat";
+      };
 
       exec-once = [
         "hyprpaper"
@@ -75,7 +78,10 @@
         ",XF86AudioPrev, exec, playerctl previous"
       ];
 
-      bindm = [ "$mod, mouse:272, movewindow" "$mod, mouse:273, resizewindow" ];
+      bindm = [
+        "$mod, mouse:272, movewindow"
+        "$mod, mouse:273, resizewindow"
+      ];
 
       general = {
         gaps_in = 5;
@@ -121,8 +127,10 @@
 
       animations = {
         enabled = true;
-        bezier =
-          [ "myBezier, 0.05, 0.9, 0.1, 1.05" "linear, 0.0, 0.0, 1.0, 1.0" ];
+        bezier = [
+          "myBezier, 0.05, 0.9, 0.1, 1.05"
+          "linear, 0.0, 0.0, 1.0, 1.0"
+        ];
         animation = [
           "windows, 1, 4, myBezier"
           "windowsOut, 1, 4, default, popin 80%"
