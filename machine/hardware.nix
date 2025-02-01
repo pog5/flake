@@ -11,10 +11,10 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
 
-  boot.extraModulePackages = [ config.boot.kernelPackages.zfs ];
+  boot.extraModulePackages = [ config.boot.kernelPackages.zfs_* ];
   boot.zfs.extraPools = [ "zpool" ];
 
-  fileSystems."/" = {
+  fileSystems."/" = { 
     device = "zpool/root";
     options = [ "zfsutil" ];
     fsType = "zfs";
