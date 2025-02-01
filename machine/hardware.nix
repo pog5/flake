@@ -11,7 +11,7 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
 
-  boot.extraModulePackages = [ config.boot.kernelPackages.zfs_* ];
+  boot.extraModulePackages = [ config.boot.kernelPackages.${pkgs.zfs.kernelModuleAttribute} ];
   boot.zfs.extraPools = [ "zpool" ];
 
   fileSystems."/" = { 
