@@ -43,7 +43,7 @@
 
   environment.systemPackages = with pkgs; [ age ];
 
-  security.sudo.package = pkgs.sudo-rs;
+  security.sudo-rs.enable = true;
 
   system.stateVersion = "24.11";
 }
