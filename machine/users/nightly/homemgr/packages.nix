@@ -69,11 +69,12 @@
     thefuck
     grc
     bat
-    ripgrep
+    ripgrep-full
     jq
     yq-go
     eza
     fzf
+    mosh
 
     # syscall mon
     strace
