@@ -18,6 +18,9 @@
     ./desktop/cursor.nix
     ./desktop/locale.nix
     ./desktop/qt.nix
+
+	./services/ssh-agent.nix
+    
     ./programs/git.nix
     ./programs/direnv.nix
     ./programs/fish.nix
