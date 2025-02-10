@@ -10,7 +10,7 @@
             };
         };
         style = {
-            name = "kvantum";
+            name = "breeze";
             package = pkgs.catppuccin-kvantum.override {
                 accent = "mauve";
                 variant = "mocha";
