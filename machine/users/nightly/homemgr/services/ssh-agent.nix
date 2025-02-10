@@ -15,7 +15,7 @@
 	  ];
 	  environment.SSH_AUTH_SOCK = "/run/user/%U/ssh-agent";
 	  path = [
-	    options.programs.ssh.package.value
+	    programs.ssh.package.value
 	  ];
 	  script = "${options.programs.ssh.package.value}/bin/ssh-add";
 	  serviceConfig = {
