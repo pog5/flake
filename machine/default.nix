@@ -18,6 +18,7 @@
     ./services/networkmanager.nix
     ./services/zram.nix
     ./services/kwallet.nix
+    ./services/bluetooth.nix
 
     ./hardware.nix
     ./firewall.nix
