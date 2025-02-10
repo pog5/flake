@@ -19,7 +19,7 @@
     ./desktop/locale.nix
     ./desktop/qt.nix
 
-	##./services/ssh-agent.nix
+	./services/mpris-proxy.nix
     
     ./programs/git.nix
     ./programs/direnv.nix
