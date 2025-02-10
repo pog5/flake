@@ -69,7 +69,7 @@
     thefuck
     grc
     bat
-    ripgrep-full
+    ripgrep
     jq
     yq-go
     eza

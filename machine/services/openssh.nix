@@ -1,4 +1,7 @@
-{ config, pkgs, lib, ... }: {
+{ config, pkgs, lib, ... }: 
+{
+  programs.ssh.startAgent = true;
+  
   services.openssh = {
     enable = true;
     startWhenNeeded = true;
