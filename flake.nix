@@ -11,6 +11,10 @@
       url = "https://git.lix.systems/lix-project/nixos-module/archive/2.92.0.tar.gz";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nvf = {
+      url = "github:notashelf/nvf";
+   	  inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -20,6 +24,7 @@
       home-manager,
       agenix,
       lix-module,
+      nvf,
       ...
     }:
     {
@@ -65,6 +70,8 @@
 
             home-manager.users.nightly = import ./machine/users/nightly/homemgr;
           }
+
+          nvf.nixosModule.default
 
           ./machine
         ];
