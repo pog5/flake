@@ -17,6 +17,7 @@
     ./services/undervolt.nix
     ./services/networkmanager.nix
     ./services/zram.nix
+    ./services/kwallet.nix
 
     ./hardware.nix
     ./firewall.nix
