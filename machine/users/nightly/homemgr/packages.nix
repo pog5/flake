@@ -22,9 +22,20 @@
 
     # desktop utils
     mission-center
+    remmina
 
     # desktop
     dolphin
+
+    # work
+    okular
+    libreoffice
+    onlyoffice-desktopeditors
+
+    # coding
+    jetbrains.rider
+    arduino-ide
+    avrdude
 
     # audio
     pavucontrol
@@ -32,9 +43,11 @@
 
     # internet
     vesktop
+    telegram-desktop
     signal-desktop
     element-desktop
-
+	viber
+	
     # games
     prismlauncher
     osu-lazer-bin
@@ -104,6 +117,19 @@
     ethtool
     pciutils # lspci
     usbutils # lsusb
+
+    # cattppuccin overload
+    (catppuccin-papirus-folders.override {
+      flavor = "mocha";
+      accent = "mauve";
+    })
+    (catppuccin-gtk.override {
+      accents = [ "mauve" ];
+      size = "compact";
+      variant = "mocha";
+    })
+    (catppuccin-cursors.override {
+    })
 
     # fonts
     liberation_ttf

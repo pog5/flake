@@ -1,4 +1,9 @@
-{ config, pkgs, ghostty, ... }: {
+{
+  config,
+  pkgs,
+  ...
+}:
+{
   home = {
     username = "nightly";
     homeDirectory = "/home/nightly";
@@ -8,27 +13,32 @@
   imports = [
     ./env.nix
     ./packages.nix
-    
+
     ./desktop/fonts.nix
     ./desktop/cursor.nix
     ./desktop/locale.nix
+    ./desktop/qt.nix
     ./programs/git.nix
     ./programs/direnv.nix
     ./programs/fish.nix
-    ./programs/helix.nix
+    #./programs/helix.nix
     ./programs/vscode.nix
-    ./programs/tofi.nix
+    #./programs/tofi.nix
     ./programs/brave.nix
     ./programs/kitty.nix
-    ./programs/hyprland.nix
+    #./programs/hyprland.nix
     ./programs/waybar.nix
     ./programs/tealdeer.nix
     ./programs/mpv.nix
-    ./programs/ghostty.nix
+    #./programs/ghostty.nix
+    ./programs/micro.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   programs.home-manager.enable = true;
 }

@@ -3,7 +3,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     agenix.url = "github:ryantm/agenix";
-    ghostty.url = "github:ghostty-org/ghostty";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -20,12 +19,11 @@
       nixpkgs,
       home-manager,
       agenix,
-      ghostty,
       lix-module,
       ...
     }:
     {
-      nixosConfigurations.nixagon = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.sprout = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
         # Define pkgs here
@@ -43,12 +41,6 @@
 
         modules = [
           lix-module.nixosModules.default
-          
-          {
-            environment.systemPackages = [
-              ghostty.packages.x86_64-linux.default
-            ];
-          }
 
           agenix.nixosModules.default
           (

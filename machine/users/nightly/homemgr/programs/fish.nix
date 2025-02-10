@@ -4,7 +4,7 @@
     interactiveShellInit = ''
       set -g fish_greeting
       starship init fish | source
-      set -gx EDITOR hx
+      set -gx EDITOR micro
       set -gx VISUAL $EDITOR
       set -gx PAGER less
       set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"

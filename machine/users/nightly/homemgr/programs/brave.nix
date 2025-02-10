@@ -5,7 +5,7 @@
     extensions = [
       { id = "nngceckbapebfimnlniiiahkandclblb"; } # bitwarden
       { id = "enamippconapkdmgfgjchkhakpfinmaj"; } # sponsorblock
-      { id = "mnjggcdmjocbbbhaepdhchncahnbgone"; } # dearrow
+      # { id = "mnjggcdmjocbbbhaepdhchncahnbgone"; } # dearrow
     ];
     commandLineArgs = [
       "--enable-features=VaapiVideoDecodeLinuxGL"

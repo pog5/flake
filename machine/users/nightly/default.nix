@@ -11,6 +11,6 @@
   users.users.nightly = {
     isNormalUser = true;
     shell = pkgs.fish;
-    extraGroups = [ "wheel" "video" ];
+    extraGroups = [ "wheel" "video" "networkmanager" ];
   };
 }

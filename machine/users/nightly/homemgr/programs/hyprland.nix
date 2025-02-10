@@ -35,7 +35,7 @@
 
       bind = [
         "$mod ALT SHIFT, Q, exit"
-        "$mod, Q, exec, ghostty"
+        "$mod, Q, exec, kitty"
         "$mod, E, exec, dolphin"
         "$mod, C, killactive"
         "$mod, V, togglefloating"
