@@ -2,7 +2,10 @@
   description = "nightly's nixos config <3";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    agenix.url = "github:ryantm/agenix";
+    agenix = {
+      url = "github:ryantm/agenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -71,7 +74,7 @@
             home-manager.users.nightly = import ./machine/users/nightly/homemgr;
           }
 
-          nvf.nixosModule.default
+          nvf.nixosModules.default
 
           ./machine
         ];
