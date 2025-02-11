@@ -4,6 +4,7 @@
   ...
 }:
 {
+
   home = {
     username = "nightly";
     homeDirectory = "/home/nightly";
@@ -19,7 +20,7 @@
     ./desktop/locale.nix
     ./desktop/qt.nix
 
-	./services/mpris-proxy.nix
+	  ./services/mpris-proxy.nix
     
     ./programs/git.nix
     ./programs/direnv.nix

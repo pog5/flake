@@ -49,21 +49,8 @@
 
         modules = [
           lix-module.nixosModules.default
-
+          nvf.nixosModules.default
           agenix.nixosModules.default
-          (
-            {
-              config,
-              pkgs,
-              system,
-              lib,
-              options,
-              ...
-            }:
-            {
-              nix.registry.nixpkgs.flake = nixpkgs;
-            }
-          )
 
           home-manager.nixosModules.home-manager
           {
@@ -73,8 +60,6 @@
 
             home-manager.users.nightly = import ./machine/users/nightly/homemgr;
           }
-
-          nvf.nixosModules.default
 
           ./machine
         ];
