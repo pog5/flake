@@ -37,6 +37,10 @@
     arduino-ide
     avrdude
 
+    # flsah drives
+    ventoy-full
+    woeusb-ng
+
     # audio
     pavucontrol
     easyeffects
