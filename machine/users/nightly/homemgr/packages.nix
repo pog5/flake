@@ -34,6 +34,7 @@
 
     # coding
     jetbrains.rider
+    jetbrains.idea-ultimate
     arduino-ide
     avrdude
 
