@@ -39,17 +39,16 @@
           system = "x86_64-linux";
           config = {
             allowUnfree = true;
-            permittedInsecurePackages = [
-              "dotnet-runtime-6.0.36" # for opentabletdriver
-              "dotnet-sdk-wrapped-6.0.428" # ^
-              "dotnet-sdk-6.0.428" # ^
-            ];
+            # permittedInsecurePackages = [
+            #   "dotnet-runtime-6.0.36" # for opentabletdriver
+            #   "dotnet-sdk-wrapped-6.0.428" # ^
+            #   "dotnet-sdk-6.0.428" # ^
+            # ];
           };
         };
 
         modules = [
           lix-module.nixosModules.default
-          nvf.nixosModules.default
           agenix.nixosModules.default
 
           home-manager.nixosModules.home-manager
