@@ -35,6 +35,7 @@
     ./programs/mpv.nix
     #./programs/ghostty.nix
     ./programs/micro.nix
+    ./programs/neovim.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
